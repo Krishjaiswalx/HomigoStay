@@ -2,32 +2,38 @@
   <div class="row mt-4">
     <div class="col-8 offset-2">
       <h3>Wanderlust - List Details</h3>
-      <form method="POST" action="/listings" class="needs-validate" novalidate>
+      <form method="POST" action="/listings" class="needs-validation" novalidate>
         <div class="mb-3">
           <label for="title" class="form-label">Title</label>
           <input name="listing[title]" placeholder="Add a Catchy title" type="text" class="form-control" required />
+          <div class="valid-feedback">Title looks good!</div>
         </div>
         <div class="mb-3">
           <label for="desscription" class="form-label">Description</label>
           <textarea name="listing[description]" class="form-control" required></textarea>
+          <div class="valid-feedback">Description looks good!</div>
         </div>
         <div class="mb-3">
           <label for="image" class="form-label">Image Link</label>
           <input name="listing[image]" placeholder="Enter Image URL/Link" type="text" class="form-control" />
+          <div class="valid-feedback">please enter a valid Image link</div>
         </div>
         <div class="row">
           <div class="mb-3 col-md-4">
             <label for="price" class="form-label">Price</label>
             <input name="listing[price]" placeholder="₹1200" type="number" class="form-control" required />
+            <div class="invalid-feedback">please enter a valid Price</div>
           </div>
           <div class="mb-3 col-md-8">
             <label for="country" class="form-label">Country</label>
             <input name="listing[country]" placeholder="India" type="text" class="form-control" required />
+            <div class="invalid-feedback">please enter a valid Country</div>
           </div>
         </div>
         <div class="mb-3">
           <label for="location" class="form-label">location</label>
           <input name="listing[location]" placeholder="Deoghar, Jharkhand" type="text" class="form-control" required />
+          <div class="invalid-feedback">please enter a valid Location</div>
         </div>
         <button class="btn btn-dark add-btn mt-4 mb-4">Add</button>
       </form>
