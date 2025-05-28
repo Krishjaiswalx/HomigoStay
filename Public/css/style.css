@@ -3,7 +3,7 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-}   
+}  
 .container{
     flex: 1;
 }
@@ -71,4 +71,14 @@ body{
 .add-btn{
     background-color: #fe424d !important;
     border: none !important;
+}
+.show-img{
+    height: 30vh;
+}
+.btns{
+    display: flex !important;
+}
+.showcard{
+    padding-left: 0;
+    padding-right: 0;
 }
