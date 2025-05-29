@@ -7,10 +7,10 @@ const ejsMate = require("ejs-mate");
 const methodOverride = require("method-override");
 const wrapAsync = require("./utils/wrapAsync.js");
 const ExpressError = require("./utils/ExpressError.js");
-const { listingSchema } = require("./schema.js")
+const { listingSchema } = require("./public/js/schema.js");
 
 
-const MONGO_URL = "mongodb://localhost:27017/wanderlust"; // added db name
+const MONGO_URL = "mongodb://localhost:27017/"; // added db name
 
 main()
   .then(() => {
@@ -113,9 +113,9 @@ app.delete(
 );
 
 //  4. Catch-all Route for 404s
-//app.all("*", (req, res, next) => {
- // next(new ExpressError(404, "Page not found!"));
-//});
+app.all('*', (req, res, next) => {
+  next(new ExpressError(404, "not found!"));
+});
 
 //  5. Error-Handling Middleware
 app.use((err, req, res, next) => {
