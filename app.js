@@ -7,11 +7,15 @@ const methodOverride = require("method-override");
 const ExpressError = require("./utils/ExpressError.js");
 const session = require("express-session");
 const flash = require("connect-flash");
+const passport = require("passport");
+const LocalStatergy = require("passport-local");
+const User = require("./models/user.js");
 
-const listings = require("./routes/listing.js")
-const review = require("./routes/review.js")
+const listingRouter = require("./routes/listing.js");
+const reviewRouter = require("./routes/review.js");
+const userRouter = require("./routes/user.js");
 
-const MONGO_URL = "mongodb://localhost:27017/";
+const MONGO_URL = "mongodb://localhost:27017/homigo";
 
 main()
   .then(() => {
@@ -49,14 +53,23 @@ app.get("/", (req, res) => {
 app.use(session(sessionOptions));
 app.use(flash());
 
+app.use(passport.initialize());
+app.use(passport.session());
+passport.use(new LocalStatergy(User.authenticate()));
+
+passport.serializeUser(User.serializeUser());
+passport.deserializeUser(User.deserializeUser());
+
 app.use((req, res, next) => {
   res.locals.success = req.flash("success");
   res.locals.error = req.flash("error");
+  res.locals.currUser = req.user;
   next();
 });
 
-app.use("/listings", listings);
-app.use("/listings/:id/reviews", review);
+app.use("/listings", listingRouter);
+app.use("/listings/:id/reviews", reviewRouter);
+app.use("/", userRouter);
 
 //  4. Catch-all Route for 404s
 app.all('*', (req, res, next) => {

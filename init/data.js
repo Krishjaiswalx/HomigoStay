@@ -6,6 +6,7 @@ const sampleListings = [
     price: 1500,
     location: "Malibu",
     country: "United States",
+    owner: "683acbad307c29c66d367a1d",
   },
   {
     title: "Rustic Mountain Cabin",
@@ -13,7 +14,8 @@ const sampleListings = [
     image: "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60",
     price: 1200,
     location: "Aspen",
-    country: "United States"
+    country: "United States",
+    owner: "683acbad307c29c66d367a1d",
   },
   {
     title: "Modern City Loft",
@@ -21,7 +23,8 @@ const sampleListings = [
     image: "https://images.unsplash.com/photo-1554995207-c18c203602cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60",
     price: 1800,
     location: "New York",
-    country: "United States"
+    country: "United States",
+    owner: "683acbad307c29c66d367a1d",
   },
   {
     title: "Tropical Island Villa",
@@ -29,7 +32,8 @@ const sampleListings = [
     image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60",
     price: 2500,
     location: "Bali",
-    country: "Indonesia"
+    country: "Indonesia",
+    owner: "683acbad307c29c66d367a1d",
   },
   {
     title: "Countryside Farmhouse",
@@ -37,7 +41,8 @@ const sampleListings = [
     image: "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60",
     price: 1000,
     location: "Tuscany",
-    country: "Italy"
+    country: "Italy",
+    owner: "683acbad307c29c66d367a1d",
   },
   {
     title: "Secluded Forest Cabin",
@@ -45,7 +50,8 @@ const sampleListings = [
     image: "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60",
     price: 900,
     location: "Portland",
-    country: "United States"
+    country: "United States",
+    owner: "683acbad307c29c66d367a1d",
   },
   {
     title: "Lakeside Retreat",
@@ -53,7 +59,8 @@ const sampleListings = [
     image: "https://images.unsplash.com/photo-1558979158-65a1eaa08691?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60",
     price: 1300,
     location: "Lake Tahoe",
-    country: "United States"
+    country: "United States",
+    owner: "683acbad307c29c66d367a1d",
   },
   {
     title: "Snowy Ski Chalet",
@@ -61,7 +68,8 @@ const sampleListings = [
     image: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=60",
     price: 1900,
     location: "Zermatt",
-    country: "Switzerland"
+    country: "Switzerland",
+    owner: "683acbad307c29c66d367a1d",
   }
 ];
 
