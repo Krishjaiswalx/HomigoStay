@@ -3,10 +3,10 @@
 A full-stack rental booking platform inspired by Airbnb. Built using the MERN stack and styled with Bootstrap. This project was completed as part of the Apna College Sigma 4.0 Web Development Track.
 
 ## 🔧 Tech Stack
-- **Frontend**: React.js, Tailwind CSS, Redux
+- **Framework**: Bootstrap
 - **Backend**: Node.js, Express.js
 - **Database**: MongoDB (Mongoose)
-- **Auth**: JWT + bcrypt
+- **Auth**: express-session
 - **Other APIs**: Cloudinary (Image uploads), Mapbox (Geolocation)
 
 ## 🚀 Features
