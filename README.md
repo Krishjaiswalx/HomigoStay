@@ -18,17 +18,16 @@ A full-stack rental booking platform inspired by Airbnb. Built using the MERN st
 - 📱 Mobile-responsive layout
 
 ## 🖥️ Live Demo
-[👉 Click to Visit Live Site](https://your-deployment-link.com)
+[👉 Click to Visit Live Site](https://homigostay.onrender.com/listings)
 
 ## 📸 Screenshots
 (Add a few screenshots of your UI: homepage, booking screen, etc.)
 
 ## 📂 Folder Structure
-- `/client` → React frontend
-- `/server` → Node/Express backend
+- `/views` → frontend
+- `/routes` → Node/Express backend
 
 ## 🧠 What I Learned
 - Full CRUD operations across frontend & backend
-- Managing state with Redux
 - Secure user authentication flow
 - Integration of third-party APIs (Cloudinary, Mapbox)
