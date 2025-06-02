@@ -1,6 +1,6 @@
-# 🏠 Airbnb Clone
+# 🏠HomigoStay | Airbnb Clone
 
-A full-stack rental booking platform inspired by Airbnb. Built using the MERN stack and styled with Tailwind CSS. This project was completed as part of the Apna College Sigma 4.0 Web Development Track.
+A full-stack rental booking platform inspired by Airbnb. Built using the MERN stack and styled with Bootstrap. This project was completed as part of the Apna College Sigma 4.0 Web Development Track.
 
 ## 🔧 Tech Stack
 - **Frontend**: React.js, Tailwind CSS, Redux
