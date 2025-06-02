@@ -82,3 +82,60 @@ body{
     padding-left: 0;
     padding-right: 0;
 }
+#filters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* ⬅ centers all filter items */
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem auto;
+}
+
+.filter{
+    text-align: center;
+    margin-right: 1.5rem;
+    margin-top: 1.5rem;
+    opacity: 0.6;
+}
+.filter:hover{
+opacity: 1;
+cursor: pointer;
+}
+.filter p{
+    font-size: 0.8rem;
+}
+.tax-info {
+    opacity: 0.6;
+    display: none;
+}
+.tax-toggle {
+    border: 1px solid black;
+    border-radius: 1rem;
+    height: 3.25rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* ⬅ centers label text */
+    text-align: center;
+}
+.btn-nav-search {
+    background-color: #fe424d !important;
+    color: #fff !important;
+    border-radius: 20px !important;
+    padding: 0 1rem !important;
+}
+.input-nav-search {
+    border-radius: 20px !important;
+    padding: 0 0.5rem !important;
+}
+.input-nav-search::placeholder {
+  text-align: center;
+}
+.input-nav-search {
+  text-align: center;
+}
+#map{
+    height: 400px;
+    width: 55vw;
+    border-radius: 10px;  
+}

@@ -2,7 +2,7 @@
   <div class="row mt-4">
     <div class="col-8 offset-2">
       <h3>Homigo - Edit Details</h3>
-      <form method="POST" action="/listings/<%= listing._id %>?_method=PUT" class="needs-validation" novalidate>
+      <form method="POST" action="/listings/<%= listing._id %>?_method=PUT" class="needs-validation" novalidate enctype="multipart/form-data">
         <div class="mb-3">
           <label for="title" class="form-label">Title</label>
           <input name="listing[title]" value="<%= listing.title %>" type="text" class="form-control" required />
@@ -13,11 +13,13 @@
           <textarea name="listing[description]" class="form-control" required> <%= listing.description %></textarea>
           <div class="invalid-feedback">Description can't be empty</div>
         </div>
-
         <div class="mb-3">
-          <label for="image" class="form-label">Image</label>
-          <input name="listing[image]" value="<%= listing.image %>" type="text" class="form-control" required />
-          <div class="invalid-feedback">please enter a valid image link</div>
+          <img src="<%= originalUrl %>" alt="">
+        </div>
+        <div class="mb-3">
+          <label for="image" class="form-label">New Image</label>
+          <input name="listing[image]" type="file" class="form-control" />
+          <div class="invalid-feedback">please upload a valid Image</div>
         </div>
         <div class="row">
           <div class="mb-3 col-md-4">

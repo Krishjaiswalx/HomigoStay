@@ -1,25 +1,38 @@
 <nav class="navbar navbar-expand-md bg-body-light border-bottom sticky-top">
   <div class="container-fluid">
-    <a class="navbar-brand" href="/"><i class="fa-brands fa-keycdn"></i></a>
+    <a class="navbar-brand" href="/listings">
+      <i class="fa-brands fa-keycdn"></i>
+    </a>
+
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+
+    <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+      <!-- Left: Nav links -->
       <div class="navbar-nav">
-        <a class="nav-link" aria-current="page" href="/">Home</a>
-        <a class="nav-link" href="/listings">All Listings</a>
-        <a class="nav-link" href="/listings/new">Add Listings</a> 
+        <a class="nav-link" href="/listings">Explore</a>
       </div>
-    </div>
+
+      <!-- Center: Search Bar -->
+      <form class="d-flex mx-auto" role="search" style="max-width: 500px; width: 100%;">
+        <input class="form-control me-2 input-nav-search" type="search" placeholder="Search Destination" aria-label="Search" />
+        <button class="btn btn-nav-search d-inline-flex align-items-center gap-2" type="submit">
+          <i class="fa-solid fa-magnifying-glass"></i> Search
+        </button>
+      </form>
+
+      <!-- Right: Auth links -->
       <div class="navbar-nav">
-        <% if(!currUser) { %> 
-        <a class="nav-link" aria-current="page" href="/signup">SignUp</a>
-        <a class="nav-link" href="/login">Login</a>
-        <% } %> 
-        <% if(currUser) { %>
-        <a class="nav-link" href="/logout">Logout</a>
+        <a class="nav-link" href="/listings/new">Homigo your home</a>
+        <% if (!currUser) { %>
+          <a class="nav-link" href="/signup"><b>SignUp</b></a>
+          <a class="nav-link" href="/login"><b>Login</b></a>
+        <% } else { %>
+          <a class="nav-link" href="/logout"><b>Logout</b></a>
         <% } %>
       </div>
+    </div>
   </div>
 </nav>

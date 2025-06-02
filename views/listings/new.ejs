@@ -2,7 +2,7 @@
   <div class="row mt-4">
     <div class="col-8 offset-2">
       <h3>Homigo - List Details</h3>
-      <form method="POST" action="/listings" class="needs-validation" novalidate>
+      <form method="POST" action="/listings" class="needs-validation" novalidate enctype="multipart/form-data">
         <div class="mb-3">
           <label for="title" class="form-label">Title</label>
           <input name="listing[title]" placeholder="Add a Catchy title" type="text" class="form-control" required />
@@ -14,9 +14,9 @@
           <div class="valid-feedback">Description looks good!</div>
         </div>
         <div class="mb-3">
-          <label for="image" class="form-label">Image Link</label>
-          <input name="listing[image]" placeholder="Enter Image URL/Link" type="text" class="form-control" />
-          <div class="valid-feedback">please enter a valid Image link</div>
+          <label for="image" class="form-label">Upload Image</label>
+          <input name="listing[image]" type="file" class="form-control" required/>
+          <div class="invalid-feedback">Please Upload a valid Image</div>
         </div>
         <div class="row">
           <div class="mb-3 col-md-4">
